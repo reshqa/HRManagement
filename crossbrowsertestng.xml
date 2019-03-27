@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestNg CrossBrowser Testing" verbose="1" thread-count="2" >
+    <!--thread count represent how many browser should open -->
+    <test name="Firefox Tests" >
+        <parameter name="Browser" value="FF"/>
+        <classes>
+            <class name="HRM.CrossBrowserTest" />
+            <!--<class name="HRM.OrangeHRM2" />-->
+        </classes>
+    </test>
+    <test name="Chrome Tests" >
+        <parameter name="Browser" value="chrome"/>
+        <classes>
+            <class name="HRM.CrossBrowserTest" />
+            <!--<class name="HRM.OrangeHRM2" />-->
+        </classes>
+    </test>
+
+</suite>
